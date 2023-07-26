@@ -4,6 +4,16 @@ on:
   repository_dispatch:
   push:
     branches: [ master ]
+    paths:
+      - README.md
+      - .cirun.yml
+      - .github/workflows/test.yml
+  pull_request:
+    branches: [ master ]
+    paths:
+      - README.md
+      - .cirun.yml
+      - .github/workflows/test.yml
 
 jobs:
   test:
