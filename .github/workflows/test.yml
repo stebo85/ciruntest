@@ -1,0 +1,17 @@
+name: test
+
+jobs:
+  test:
+    runs-on: "cirun-nectar-small--${{ github.run_id }}"
+    strategy:
+      matrix:
+        args: ['1', '2', '2', '3', '4', '5']
+      fail-fast: false
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+      with:
+        python-version: 3.8
+    - name: Setup QSMxT
+      run: |
+        echo "test"
