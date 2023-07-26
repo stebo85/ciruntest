@@ -19,4 +19,4 @@ jobs:
         python-version: 3.8
     - name: Setup QSMxT
       run: |
-        echo "test"
+        df -h

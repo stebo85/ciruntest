@@ -2,7 +2,7 @@ runners:
   - name: "nectar-runner-small"
     cloud: "openstack"
     instance_type: "r3.small"
-    machine_image: "4adcec13-2291-4bff-987f-d87f98d24379"
+    machine_image: "e19a0e50-8cf6-423a-b6c6-6c31026d4bcb"
     region: Melbourne
     labels:
       - "cirun-nectar-small"  
